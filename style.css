@@ -23,7 +23,7 @@ html, body{
 
 h1 {
     font-family: 'Ubuntu', sans-serif;
-    color: #d8d8d8;
+    color: #f4f1ea;
 }
 
 p {
@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: #00d4ff ;
+    color: #00d4ff;
 }
 
 .scroll-container {
@@ -114,7 +114,7 @@ a:hover {
 .moons-of-neptun {
     align-self: flex-start;
     height: auto;
-    margin: 1em;
+    margin: 16px;
 }
 
 .nav-bar {
@@ -126,13 +126,108 @@ a:hover {
 
 .nav-item {
     text-align: center; 
-    font-size: 1.25em; /*20px*/
-    line-height: 1.875em; /*30px*/
-    letter-spacing: 0.06em; /*ca 1px*/
+    font-size: 20px; 
+    line-height: 30px;
+    letter-spacing: 1px; 
     color: gray;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     font-style: italic;
-    font-weight: 300; /*300px*/ 
-    padding: 0.6em;  /*ca 10px*/
+    font-weight: 300; 
+    padding: 10px; 
 }
+
+.top-artical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-one {
+    align-self: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+    color:  #d8d8d8;
+    padding: 10px;
+}
+
+.heading-two {
+    align-self: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+#neptune-animation { /* Credits: NASA/JPL-Caltech */
+    align-self: center;
+   }
+ 
+ .neptun-text {
+     align-self: center;
+     font-size: 18px;
+     line-height: 20px;
+     font-weight: 300;
+     letter-spacing: 2;
+     font-family: 'Open Sans', sans-serif;
+     font-style: italic;
+     color: grey;
+     text-align: center;
+     padding: 25px;
+     margin-top: 15px;
+ }
+ 
+ .typing-banner {
+     display: inline-block;
+     align-items: center; 
+ }
+ 
+ .typing-text {
+     text-align: center; 
+     flex-basis: min-content;
+     /* Content is hidden until animation start */
+     overflow: hidden;
+     /* Typwriter cursor */
+     border-right: 4px solid #00d4ff;
+     /* Singel line */
+     white-space: nowrap;
+     font-size: 12px; 
+     color: gray;
+     letter-spacing: 2px; 
+     text-transform: uppercase;
+     font-family: 'Ubuntu Mono', monospace;
+     animation: 
+      typing 8.5s steps(46, end),
+      blink-cursor .75s step-end infinite;
+ }
+
+
+
+  /* typing effect*/
+  @keyframes typing {
+    from { 
+        width: 0 
+    }
+    to { 
+        width: 100% 
+    }
+  }
+
+/* typewriter cursor effect*/
+@keyframes blink-cursor {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #00d4ff 
+    }
+  }
+
