@@ -64,6 +64,7 @@ a:hover {
 #container-three { 
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -189,7 +190,7 @@ a:hover {
     padding-bottom: 20px;
 }
 
-#neptune-animation { /* Credits: NASA/JPL-Caltech */
+#neptune-animation { 
     align-self: center;
    }
  
@@ -233,7 +234,7 @@ a:hover {
 
 /* History page */
 
-.page-header {
+.page-header { /* repeat header for all pages */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -262,6 +263,53 @@ a:hover {
 }
 
 /* Mission page */
+
+.odyssey-section {
+    display: flow-root;
+    position: relative;
+    background: rgb(6,10,18);
+    background-image: linear-gradient(0deg, 
+    rgba(6,10,18,1) 45%, 
+    rgba(17,25,46,1) 75%, 
+    rgba(34,51,93,1) 100%);
+    height: 250px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 65%;
+    height: auto;
+    
+}
+
+.odyssey {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.odyssey-video { 
+    float: center;
+    align-items: center;
+    margin-top: 60px;
+   
+}
+
+.odyssey-section p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 300;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 2;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    margin-top: 30px;
+    text-align: center; 
+    align-self: center; 
+}
+
+
 
 /* Page four */
 
