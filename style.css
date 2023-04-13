@@ -67,10 +67,17 @@ a:hover {
     align-items: center;
 }
 
+#container-four {
+    display: flex;
+}
+
+#container-five {
+    display: flex;
+}
+
 #bg-one {
     box-sizing: border-box;
     background-color: #1f2120;
-    height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
     url("img/STScI-01GCVNZWZ8GNRA1VPGSWS5KR85.png");
     /*Neptune Wide-Field (NIRCam Image) Credit:NASA, ESA, CSA, and STScI 
@@ -89,6 +96,7 @@ a:hover {
     rgba(17,25,46,1) 60%, 
     rgba(34,51,93,1) 90%);
     min-height: 100vh;
+    min-width: 100vh;
 }
 
 #bg-three {
@@ -102,6 +110,18 @@ a:hover {
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover; 
+}
+
+#bg-four {
+    background: rgb(6,10,18);
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+#bg-five {
+    background: rgb(6,10,18);
+    min-height: 100vh;
+    min-width: 100vh;
 }
 
 .main-navigation {
@@ -137,7 +157,9 @@ a:hover {
     padding: 10px; 
 }
 
-.top-artical {
+/* intro page */
+
+.intro-heading {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -209,6 +231,41 @@ a:hover {
       blink-cursor .75s step-end infinite;
  }
 
+/* History page */
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+}
+
+.carousel::before {
+    content: "";
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Mission page */
+
+/* Page four */
+
+/* Page five */
 
 
   /* typing effect*/
