@@ -40,3 +40,99 @@ a:hover {
     color: #00d4ff ;
 }
 
+.scroll-container {
+    display: block;
+    overflow-y: scroll;
+}
+
+.scroll-page {
+    display: flex;
+}
+
+#container-one { 
+    display: flex;
+    flex-direction: column;
+}
+
+#container-two { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#container-three { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bg-one {
+    box-sizing: border-box;
+    background-color: #1f2120;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
+    url("img/STScI-01GCVNZWZ8GNRA1VPGSWS5KR85.png");
+    /*Neptune Wide-Field (NIRCam Image) Credit:NASA, ESA, CSA, and STScI 
+    https://esawebb.org/images/weic2214d/ */
+    min-height: 100vh;
+    min-width: 100vh;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+#bg-two {
+    background: rgb(6,10,18);
+    background: linear-gradient(180deg, 
+    rgba(6,10,18,1) 30%, 
+    rgba(17,25,46,1) 60%, 
+    rgba(34,51,93,1) 90%);
+    min-height: 100vh;
+}
+
+#bg-three {
+    background-color: #1f2120;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
+    url("img/PIA21629_FigA_Neptune_-_RGB_-_August_10_2017_-_V2.png");
+     /*Neptune Wide-Field (NIRCam Image) Credit:NASA, ESA, CSA, and STScI 
+    https://esawebb.org/images/weic2214d/ */
+    min-height: 100vh;
+    min-width: 100vh;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover; 
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moons-of-neptun {
+    align-self: flex-start;
+    height: auto;
+    margin: 1em;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 1em;
+}
+
+.nav-item {
+    text-align: center; 
+    font-size: 1.25em; /*20px*/
+    line-height: 1.875em; /*30px*/
+    letter-spacing: 0.06em; /*ca 1px*/
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300; /*300px*/ 
+    padding: 0.6em;  /*ca 10px*/
+}
