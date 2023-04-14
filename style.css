@@ -136,6 +136,7 @@ a:hover {
     align-self: flex-start;
     height: auto;
     margin: 16px;
+    background-color: transparent;
 }
 
 .nav-bar {
@@ -192,6 +193,7 @@ a:hover {
 
 #neptune-animation { 
     align-self: center;
+    background-color: transparent;
    }
  
  .neptun-text {
