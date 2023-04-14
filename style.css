@@ -78,7 +78,7 @@ a:hover {
 
 #bg-one {
     box-sizing: border-box;
-    background-color: #1f2120;
+    background: rgb(6,10,18);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
     url("img/STScI-01GCVNZWZ8GNRA1VPGSWS5KR85.png");
     /*Neptune Wide-Field (NIRCam Image) Credit:NASA, ESA, CSA, and STScI 
@@ -101,7 +101,7 @@ a:hover {
 }
 
 #bg-three {
-    background-color: #1f2120;
+    background: rgb(6,10,18);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
     url("img/PIA21629_FigA_Neptune_-_RGB_-_August_10_2017_-_V2.png");
      /*Neptune Wide-Field (NIRCam Image) Credit:NASA, ESA, CSA, and STScI 
