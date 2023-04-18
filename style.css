@@ -264,6 +264,22 @@ a:hover {
     pointer-events: none;
 }
 
+.slides {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    gap: 20px;
+    padding: 16px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+}
+
+.slides {
+    
+}
+
 /* Mission page */
 
 .odyssey-section {
