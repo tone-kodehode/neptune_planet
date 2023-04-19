@@ -308,7 +308,46 @@ a:hover {
     padding-left: 1em;
   }
 
-
+  .voyager-two{
+    float: right;
+    padding-left: 1em;
+  }
+  
+  .solar-system {
+    float: right;
+    width: 50%;
+    padding-right: 1em;
+  }
+  
+  .pioneer {
+    float: right;
+    padding-left: 1em;
+  }
+  
+  .ring-system {
+    float: right;
+    width: 40%;
+    padding-right: 1em;
+  }
+  
+  .new-noons {
+    float: right;
+    width: 50%;
+    padding-right: 1em;
+  }
+  
+  .psamathe {
+    float: right;
+    width: 50%;
+    padding-right: 1em;
+  }
+  
+  .keck-observatory {
+    float: right;
+    width: 50%;
+    padding: 1em;
+  }
+   
 /* Mission page */
 
 .odyssey-section {
