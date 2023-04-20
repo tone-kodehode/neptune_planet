@@ -236,16 +236,6 @@ a:hover {
 
 /* History page */
 
-.page-header { /* repeat header for all pages */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}
-
 .carousel {
     overflow: hidden;
     position: relative;
@@ -253,42 +243,39 @@ a:hover {
     scroll-behavior: smooth;
 }
 
-.carousel::before {
-    content: "";
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: none;
-}
 
-.slides {
-    width: 800px;
-    height: 500px;
-    display: flex;
-    gap: 20px;
-    padding: 16px;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
 
-}
+
+
+
+
+
+
+
+
+
+
+
 
 .timeline-content {
     scroll-snap-stop: always;
     scroll-snap-align: center;
+
     display: flow-root;
     flex-direction: row;
+
     flex-grow: 0;
     flex-shrink: 0;
+
     width: 700px;
     height: auto;
+
     padding: 30px;
     background-color: #11192E;
+
     object-fit: cover; 
     border-radius: 7px;
+
     border: none; 
 }
 
@@ -332,7 +319,7 @@ a:hover {
   
   .new-noons {
     float: right;
-    width: 50%;
+    width: 50px;
     padding-right: 1em;
   }
   
