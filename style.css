@@ -397,9 +397,54 @@ a:hover {
 
 
 
-/* Page four */
+/* footer */
 
-/* Page five */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    height: 300px;
+}
+
+.nasa {
+    display: flex;
+    justify-content: center;
+    background-color: #11192E;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px; 
+    padding: 20px;
+
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-item {
+    align-self: center;
+    text-align: center; 
+    font-size: 14px; 
+    line-height: 20px;
+    letter-spacing: 1px; 
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300; 
+    padding: 10px;
+}
+
+hr {
+    height: 12px;
+    width: 0.2px;
+    border-width:0;
+    background-color: gray;
+    margin: 4px;
+}
 
 
   /* typing effect*/
