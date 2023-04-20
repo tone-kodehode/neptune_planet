@@ -431,11 +431,10 @@ footer {
     line-height: 20px;
     letter-spacing: 1px; 
     color: gray;
-    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     font-style: italic;
-    font-weight: 300; 
-    padding: 10px;
+    font-weight: 400; 
+  
 }
 
 hr {
