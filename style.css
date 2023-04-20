@@ -78,11 +78,7 @@ a:hover {
 
 #bg-one {
     box-sizing: border-box;
-    background: rgb(6,10,18);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  
-    url("img/STScI-01GCVNZWZ8GNRA1VPGSWS5KR85.png");
-    /*Neptune Wide-Field (NIRCam Image) Credit:NASA, ESA, CSA, and STScI 
-    https://esawebb.org/images/weic2214d/ */
+    background:rgb(0, 0, 0);
     min-height: 100vh;
     min-width: 100vh;
     background-repeat: no-repeat; 
@@ -136,14 +132,13 @@ a:hover {
     align-self: flex-start;
     height: auto;
     margin: 16px;
-    background-color: transparent;
 }
 
 .nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 1em;
+    margin: 16px;;
 }
 
 .nav-item {
@@ -166,6 +161,11 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.page-header {
+   margin-top: 40px;
+   margin-bottom: 10px;
 }
 
 .heading-one {
@@ -243,44 +243,82 @@ a:hover {
     scroll-behavior: smooth;
 }
 
+.carousel::before {
+    content: "";
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    gap: 20px;
+    padding: 16px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
 
 
 
-
-
-
-
-
-
-
-
-
+  .slider::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 9999px;
+    background-color: #11192e35;
+  }
+  
+  .slider::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .slider::-webkit-scrollbar-thumb:hover {
+    background-color: #00d4ff;
+  }
+  
+  .slider::-webkit-scrollbar-thumb:active {
+    background-color: gray;
+  }
 
 
 .timeline-content {
     scroll-snap-stop: always;
     scroll-snap-align: center;
-
     display: flow-root;
     flex-direction: row;
-
     flex-grow: 0;
     flex-shrink: 0;
-
-    width: 700px;
+    width: 800px;
     height: auto;
-
     padding: 30px;
-    background-color: #11192E;
-
+    background-color:rgba(0, 0, 0, 0.027);
     object-fit: cover; 
     border-radius: 7px;
-
     border: none; 
 }
 
+.timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: #f4f1ea;
+}
+
+.timeline-content p {  
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+
 .timeline-content .date {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     margin-bottom: 10px;
     letter-spacing: 2px;
@@ -289,50 +327,62 @@ a:hover {
 }
 
 .galileo-telescop {
-    width: 40%;
+    width: 35%;
     height: auto;
     float: right;
-    padding-left: 1em;
+    padding: 10px;
   }
 
-  .voyager-two{
-    float: right;
-    padding-left: 1em;
-  }
-  
   .solar-system {
+    float: right;
+    width: 45%;
+    padding: 10px;
+  }
+
+  .ring-system {
     float: right;
     width: 50%;
     padding-right: 1em;
   }
-  
+
   .pioneer {
     float: right;
-    padding-left: 1em;
+    padding: 10px;
   }
   
   .ring-system {
     float: right;
-    width: 40%;
-    padding-right: 1em;
+    width: 45%;
+    padding: 10px;
+  }
+
+  .voyager-two{
+    float: right;
+    padding: 10px;
   }
   
-  .new-noons {
+  .new-moons {
     float: right;
-    width: 50px;
-    padding-right: 1em;
+    width: 60%;
+    padding: 10px;
   }
   
   .psamathe {
     float: right;
     width: 50%;
-    padding-right: 1em;
+    padding: 10px;
   }
   
   .keck-observatory {
     float: right;
-    width: 50%;
-    padding: 1em;
+    width: 55%;
+    padding: 10px;
+  }
+
+  .neptune-orbit {
+    float: right;
+    width: 70%;
+    padding: 10px;
   }
    
 /* Mission page */
@@ -340,15 +390,8 @@ a:hover {
 .odyssey-section {
     display: flow-root;
     position: relative;
-    background: rgb(6,10,18);
-    background-image: linear-gradient(0deg, 
-    rgba(6,10,18,1) 45%, 
-    rgba(17,25,46,1) 75%, 
-    rgba(34,51,93,1) 100%);
     height: 250px;
-    padding: 20px;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    padding: 10px;
     width: 65%;
     height: auto;
     
@@ -363,13 +406,11 @@ a:hover {
 
 .odyssey-video { 
     float: center;
-    align-items: center;
-    margin-top: 60px;
-   
+    align-items: center; 
 }
 
 .odyssey-section p {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 30px;
     font-weight: 300;
     line-height: 20px;
@@ -383,45 +424,41 @@ a:hover {
 }
 
 
-
 /* footer */
 
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     background-color: black;
     height: 300px;
 }
 
-.nasa {
+.nasa a {
     display: flex;
     justify-content: center;
     background-color: #11192E;
     text-align: center;
-    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
     line-height: 20px;
     letter-spacing: 1px; 
     padding: 20px;
-
 }
 
 .nav-footer {
     display: flex;
     justify-content: center;
-}
-
-.footer-item {
-    align-self: center;
-    text-align: center; 
-    font-size: 14px; 
-    line-height: 20px;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 14px;
     letter-spacing: 1px; 
     color: gray;
     text-transform: uppercase;
     font-style: italic;
-    font-weight: 400; 
-  
+    font-weight: 300;
+    font-size: 14px; 
 }
 
 hr {
