@@ -52,6 +52,11 @@ em {
 .scroll-page {
     display: flex;
 }
+  
+.scroll-container::-webkit-scrollbar {
+    width: 1px;
+}
+  
 
 #container-one { 
     display: flex;
@@ -82,7 +87,7 @@ em {
 
 #bg-one {
     box-sizing: border-box;
-    background:rgb(0, 0, 0);
+    background: rgb(0, 0, 0);
     min-height: 100vh;
     min-width: 100vh;
     background-repeat: no-repeat; 
@@ -91,7 +96,7 @@ em {
 }
 
 #bg-two {
-    background: rgb(6,10,18);
+    background: rgb(0, 0, 0);
     background: linear-gradient(180deg, 
     rgba(6,10,18,1) 30%, 
     rgba(17,25,46,1) 60%, 
@@ -111,18 +116,6 @@ em {
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover; 
-}
-
-#bg-four {
-    background: rgb(6,10,18);
-    min-height: 100vh;
-    min-width: 100vh;
-}
-
-#bg-five {
-    background: rgb(6,10,18);
-    min-height: 100vh;
-    min-width: 100vh;
 }
 
 .main-navigation {
@@ -441,7 +434,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     height: 300px;
 }
 
@@ -449,6 +442,10 @@ footer {
     display: flex;
     justify-content: center;
     background-color: #11192E;
+    background: linear-gradient(180deg, 
+    rgba(6,10,18,1) 30%, 
+    rgba(17,25,46,1) 60%, 
+    rgba(34,51,93,1) 90%);
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
