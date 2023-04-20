@@ -296,7 +296,7 @@ a:hover {
     width: 800px;
     height: auto;
     padding: 30px;
-    background-color:rgba(0, 0, 0, 0.027);
+    background-color:rgba(0, 0, 0, 0.045);
     object-fit: cover; 
     border-radius: 7px;
     border: none; 
@@ -335,7 +335,7 @@ a:hover {
 
   .solar-system {
     float: right;
-    width: 45%;
+    width: 47%;
     padding: 10px;
   }
 
@@ -352,7 +352,7 @@ a:hover {
   
   .ring-system {
     float: right;
-    width: 45%;
+    width: 50%;
     padding: 10px;
   }
 
@@ -369,19 +369,19 @@ a:hover {
   
   .psamathe {
     float: right;
-    width: 50%;
+    width: 55%;
     padding: 10px;
   }
   
   .keck-observatory {
     float: right;
-    width: 55%;
+    width: 57%;
     padding: 10px;
   }
 
   .neptune-orbit {
     float: right;
-    width: 70%;
+    width: 75%;
     padding: 10px;
   }
    
@@ -440,6 +440,7 @@ footer {
     background-color: #11192E;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
     font-size: 17px;
     line-height: 20px;
     letter-spacing: 1px; 
