@@ -40,6 +40,10 @@ a:hover {
     color: #00d4ff;
 }
 
+em {
+    text-decoration: underline rgba(128, 128, 128, 0.209);
+}
+
 .scroll-container {
     display: block;
     overflow-y: scroll;
@@ -138,7 +142,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin: 16px;;
+    margin: 16px;
 }
 
 .nav-item {
@@ -324,6 +328,12 @@ a:hover {
     letter-spacing: 2px;
     color: #666666;
     font-family: 'Open Sans', sans-serif;
+}
+
+.timeline-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .galileo-telescop {
