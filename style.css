@@ -55,7 +55,7 @@ em {
   
 .scroll-container::-webkit-scrollbar {
     width: 1px;
-}
+  }
   
 
 #container-one { 
@@ -285,7 +285,7 @@ em {
 
 .timeline-content {
     scroll-snap-stop: always;
-    scroll-snap-align: center;
+    scroll-snap-align: center; 
     display: flow-root;
     flex-direction: row;
     flex-grow: 0;
